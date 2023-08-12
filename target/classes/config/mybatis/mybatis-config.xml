@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+		<setting name="jdbcTypeForNull" value="VARCHAR" />
+	</settings>
+	
+	<typeAliases>
+		<!-- <package> : 디렉토리(패키지) 안에 있는 거 통째로 별명 지어줄 때 사용 -->
+		<!-- <typeAlias> : vo 하나 하나  -->
+		<package name="com.sy.soyeon.vo"/>
+		<!-- ㄴ 이 패키지 밑에 있는 건 전체 다 별명을 지어서 쓰겠다 -->
+		<!-- ㄴ com.sy.soyeon.vo.TestVO => TestVO(알아서 자동으로 이 값으로 alias 줌) -->
+		<!-- <typeAlias type="com.sy.soyeon.vo.TestVO" alias="TestVO"/> -->
+	</typeAliases>
+</configuration>

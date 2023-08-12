@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="net.harawata.mybatipse_1.2.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../tool/mybatipse/net.harawata.mybatipse_1.2.4.202006282327.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

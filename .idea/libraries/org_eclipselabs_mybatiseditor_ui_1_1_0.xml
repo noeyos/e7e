@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.eclipselabs.mybatiseditor.ui_1.1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../tool/mybatipse/org.eclipselabs.mybatiseditor.ui_1.1.0.201207062137.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

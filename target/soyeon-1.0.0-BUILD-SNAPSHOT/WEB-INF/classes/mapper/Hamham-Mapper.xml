@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sy.soyeon.mapper.Hamham">
+	<select id="listData" resultType="HamhamVO">
+		select * from hamham
+	</select>
+	<select id="oneData" parameterType="HamhamVO" resultType="HamhamVO">
+		select * from hamham where title = #{title}
+	</select>
+	<insert id="insertData" parameterType="HamhamVO">
+		insert into hamham values (#{title}, #{scont}, #{sname})
+	</insert>
+	<update id="updateData" parameterType="HamhamVO">
+		update hamham set scont = #{scont}, sname = #{sname}
+		where title = #{title}
+	</update>
+	<delete id="deleteData" parameterType="HamhamVO">
+		delete from hamham where title = #{title}
+	</delete>
+</mapper>
