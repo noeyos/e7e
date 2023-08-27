@@ -11,9 +11,9 @@
       <property name="driverClassName"
          value="oracle.jdbc.OracleDriver"></property>
       <property name="jdbcUrl"
-         value="jdbc:oracle:thin:@localhost:1521:XE"></property>
-      <property name="username" value="soyeon"></property>
-      <property name="password" value="java"></property>
+         value="jdbc:oracle:thin:@192.168.142.24:1521:XE"></property>
+      <property name="username" value="test"></property>
+      <property name="password" value="test"></property>
    </bean>
 
    <bean id="datasource" class="com.zaxxer.hikari.HikariDataSource"
