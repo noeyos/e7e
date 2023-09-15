@@ -10,6 +10,11 @@ import javax.servlet.http.HttpSession;
 @RequestMapping("/")
 public class ChatController {
 
+    @GetMapping("/mychat")
+    public String myChat() {
+        return "myChat";
+    }
+
     @GetMapping("/chat")
     public String chatChat(HttpSession httpSession) {
         httpSession.setAttribute("myName", "soyeonlee");

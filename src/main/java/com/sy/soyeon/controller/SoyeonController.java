@@ -10,18 +10,12 @@ import java.util.Map;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import com.sy.soyeon.vo.TestVO;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.servlet.NoHandlerFoundException;
 
 //@Controller + @ResponseBody
 //@RestController
@@ -85,6 +79,22 @@ public class SoyeonController {
       
       //return "delete";
    }
+
+   // NullPointerException 핸들링
+//   @ExceptionHandler(NullPointerException.class)
+//   @ResponseBody
+//   public String nullHandel(NullPointerException e) {
+//      return e.getMessage();
+//   }
+//
+//   // 핸들러를 못 찾겠다
+//   @ExceptionHandler(NoHandlerFoundException.class)
+//   @ResponseBody
+//   public String nullHandel(NoHandlerFoundException e) {
+//      return e.getMessage();
+//   }
+
+
    
    
    

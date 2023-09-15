@@ -6,6 +6,7 @@ import oracle.jdbc.proxy.annotation.Post;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.NoHandlerFoundException;
 
 import java.util.List;
 
@@ -29,7 +30,8 @@ public class HamController {
     @ResponseBody
     @GetMapping(value = "/hams", produces = "application/json;charset=utf-8")
     public List<HamhamVO> getHams() {
-        return hamSVC.listData();
+        List<HamhamVO> testList = hamSVC.listData();
+        return testList;
     }
 
     // 1개 조회
@@ -63,4 +65,18 @@ public class HamController {
         hamhamVO.setTitle(title);
         return Integer.toString(hamSVC.deleteData(hamhamVO));
     }
+
+//    @ExceptionHandler(NullPointerException.class)
+//    @ResponseBody
+//    public String nullHandel(NullPointerException e) {
+//        return "Are you null " + e.getMessage();
+//    }
+//
+//    // 핸들러를 못 찾겠다
+//    @ExceptionHandler(NoHandlerFoundException.class)
+//    @ResponseBody
+//    public String nullHandel(NoHandlerFoundException e) {
+//        return e.getMessage();
+//    }
+
 }
